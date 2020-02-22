@@ -1,0 +1,662 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CEB3FDA223FF89440066209B /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = CEB3FDA123FF89440066209B /* AppDelegate.mm */; };
+		CEB3FDA523FF89440066209B /* Renderer.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB3FDA423FF89440066209B /* Renderer.m */; };
+		CEB3FDA823FF89440066209B /* GameViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = CEB3FDA723FF89440066209B /* GameViewController.mm */; };
+		CEB3FDAA23FF89440066209B /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = CEB3FDA923FF89440066209B /* Shaders.metal */; };
+		CEB3FDAE23FF89440066209B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB3FDAC23FF89440066209B /* Main.storyboard */; };
+		CEB3FDB023FF89450066209B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB3FDAF23FF89450066209B /* Assets.xcassets */; };
+		CEB3FDB323FF89450066209B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB3FDB123FF89450066209B /* LaunchScreen.storyboard */; };
+		CEB3FDB623FF89450066209B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB3FDB523FF89450066209B /* main.m */; };
+		CEB3FDC023FF89460066209B /* opencv_game_testTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB3FDBF23FF89460066209B /* opencv_game_testTests.m */; };
+		CEB3FDCB23FF89460066209B /* opencv_game_testUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB3FDCA23FF89460066209B /* opencv_game_testUITests.m */; };
+		CEB3FE4023FF8B820066209B /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB3FE3F23FF8B820066209B /* opencv2.framework */; };
+		CEB3FE4423FFA6370066209B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB3FE4323FFA6370066209B /* AVFoundation.framework */; };
+		CEB3FE4623FFA6800066209B /* Vision.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB3FE4523FFA6800066209B /* Vision.framework */; };
+		CEB3FE4823FFA68A0066209B /* VisionKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB3FE4723FFA68A0066209B /* VisionKit.framework */; };
+		CEB3FE4A23FFA6DB0066209B /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB3FE4923FFA6DB0066209B /* AssetsLibrary.framework */; };
+		CEB3FE4C23FFA7140066209B /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB3FE4B23FFA7140066209B /* Accelerate.framework */; };
+		CEB3FE4E23FFA7230066209B /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB3FE4D23FFA7230066209B /* ImageIO.framework */; };
+		CEB3FE5023FFA72D0066209B /* ImageCaptureCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB3FE4F23FFA72D0066209B /* ImageCaptureCore.framework */; };
+		CEB3FE5223FFA7360066209B /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB3FE5123FFA7360066209B /* CoreImage.framework */; };
+		CEB3FE5423FFA7410066209B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB3FE5323FFA7410066209B /* CoreGraphics.framework */; };
+		CEB3FE5623FFA7540066209B /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB3FE5523FFA7540066209B /* CoreMedia.framework */; };
+		CEB3FE5823FFA7600066209B /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB3FE5723FFA7600066209B /* CoreVideo.framework */; };
+		CEB3FE5A23FFA7680066209B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB3FE5923FFA7680066209B /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CEB3FDBC23FF89460066209B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEB3FD9523FF89440066209B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEB3FD9C23FF89440066209B;
+			remoteInfo = "opencv-game-test";
+		};
+		CEB3FDC723FF89460066209B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEB3FD9523FF89440066209B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEB3FD9C23FF89440066209B;
+			remoteInfo = "opencv-game-test";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CEB3FD9D23FF89440066209B /* opencv-game-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "opencv-game-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEB3FDA023FF89440066209B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CEB3FDA123FF89440066209B /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		CEB3FDA323FF89440066209B /* Renderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Renderer.h; sourceTree = "<group>"; };
+		CEB3FDA423FF89440066209B /* Renderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Renderer.m; sourceTree = "<group>"; };
+		CEB3FDA623FF89440066209B /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		CEB3FDA723FF89440066209B /* GameViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = GameViewController.mm; sourceTree = "<group>"; };
+		CEB3FDA923FF89440066209B /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		CEB3FDAB23FF89440066209B /* ShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShaderTypes.h; sourceTree = "<group>"; };
+		CEB3FDAD23FF89440066209B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CEB3FDAF23FF89450066209B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEB3FDB223FF89450066209B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CEB3FDB423FF89450066209B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEB3FDB523FF89450066209B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CEB3FDBB23FF89460066209B /* opencv-game-testTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "opencv-game-testTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEB3FDBF23FF89460066209B /* opencv_game_testTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = opencv_game_testTests.m; sourceTree = "<group>"; };
+		CEB3FDC123FF89460066209B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEB3FDC623FF89460066209B /* opencv-game-testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "opencv-game-testUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEB3FDCA23FF89460066209B /* opencv_game_testUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = opencv_game_testUITests.m; sourceTree = "<group>"; };
+		CEB3FDCC23FF89460066209B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEB3FE3F23FF8B820066209B /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		CEB3FE4323FFA6370066209B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		CEB3FE4523FFA6800066209B /* Vision.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Vision.framework; path = System/Library/Frameworks/Vision.framework; sourceTree = SDKROOT; };
+		CEB3FE4723FFA68A0066209B /* VisionKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VisionKit.framework; path = System/Library/Frameworks/VisionKit.framework; sourceTree = SDKROOT; };
+		CEB3FE4923FFA6DB0066209B /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		CEB3FE4B23FFA7140066209B /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		CEB3FE4D23FFA7230066209B /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		CEB3FE4F23FFA72D0066209B /* ImageCaptureCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageCaptureCore.framework; path = System/Library/Frameworks/ImageCaptureCore.framework; sourceTree = SDKROOT; };
+		CEB3FE5123FFA7360066209B /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		CEB3FE5323FFA7410066209B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CEB3FE5523FFA7540066209B /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		CEB3FE5723FFA7600066209B /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		CEB3FE5923FFA7680066209B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEB3FD9A23FF89440066209B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEB3FE5A23FFA7680066209B /* QuartzCore.framework in Frameworks */,
+				CEB3FE5823FFA7600066209B /* CoreVideo.framework in Frameworks */,
+				CEB3FE5623FFA7540066209B /* CoreMedia.framework in Frameworks */,
+				CEB3FE5223FFA7360066209B /* CoreImage.framework in Frameworks */,
+				CEB3FE5423FFA7410066209B /* CoreGraphics.framework in Frameworks */,
+				CEB3FE5023FFA72D0066209B /* ImageCaptureCore.framework in Frameworks */,
+				CEB3FE4E23FFA7230066209B /* ImageIO.framework in Frameworks */,
+				CEB3FE4C23FFA7140066209B /* Accelerate.framework in Frameworks */,
+				CEB3FE4A23FFA6DB0066209B /* AssetsLibrary.framework in Frameworks */,
+				CEB3FE4823FFA68A0066209B /* VisionKit.framework in Frameworks */,
+				CEB3FE4623FFA6800066209B /* Vision.framework in Frameworks */,
+				CEB3FE4423FFA6370066209B /* AVFoundation.framework in Frameworks */,
+				CEB3FE4023FF8B820066209B /* opencv2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEB3FDB823FF89460066209B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEB3FDC323FF89460066209B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CEB3FD9423FF89440066209B = {
+			isa = PBXGroup;
+			children = (
+				CEB3FD9F23FF89440066209B /* opencv-game-test */,
+				CEB3FDBE23FF89460066209B /* opencv-game-testTests */,
+				CEB3FDC923FF89460066209B /* opencv-game-testUITests */,
+				CEB3FD9E23FF89440066209B /* Products */,
+				CEB3FDD823FF89780066209B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CEB3FD9E23FF89440066209B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEB3FD9D23FF89440066209B /* opencv-game-test.app */,
+				CEB3FDBB23FF89460066209B /* opencv-game-testTests.xctest */,
+				CEB3FDC623FF89460066209B /* opencv-game-testUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEB3FD9F23FF89440066209B /* opencv-game-test */ = {
+			isa = PBXGroup;
+			children = (
+				CEB3FDA023FF89440066209B /* AppDelegate.h */,
+				CEB3FDA123FF89440066209B /* AppDelegate.mm */,
+				CEB3FDA323FF89440066209B /* Renderer.h */,
+				CEB3FDA423FF89440066209B /* Renderer.m */,
+				CEB3FDA623FF89440066209B /* GameViewController.h */,
+				CEB3FDA723FF89440066209B /* GameViewController.mm */,
+				CEB3FDA923FF89440066209B /* Shaders.metal */,
+				CEB3FDAB23FF89440066209B /* ShaderTypes.h */,
+				CEB3FDAC23FF89440066209B /* Main.storyboard */,
+				CEB3FDAF23FF89450066209B /* Assets.xcassets */,
+				CEB3FDB123FF89450066209B /* LaunchScreen.storyboard */,
+				CEB3FDB423FF89450066209B /* Info.plist */,
+				CEB3FDB523FF89450066209B /* main.m */,
+			);
+			path = "opencv-game-test";
+			sourceTree = "<group>";
+		};
+		CEB3FDBE23FF89460066209B /* opencv-game-testTests */ = {
+			isa = PBXGroup;
+			children = (
+				CEB3FDBF23FF89460066209B /* opencv_game_testTests.m */,
+				CEB3FDC123FF89460066209B /* Info.plist */,
+			);
+			path = "opencv-game-testTests";
+			sourceTree = "<group>";
+		};
+		CEB3FDC923FF89460066209B /* opencv-game-testUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CEB3FDCA23FF89460066209B /* opencv_game_testUITests.m */,
+				CEB3FDCC23FF89460066209B /* Info.plist */,
+			);
+			path = "opencv-game-testUITests";
+			sourceTree = "<group>";
+		};
+		CEB3FDD823FF89780066209B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEB3FE5923FFA7680066209B /* QuartzCore.framework */,
+				CEB3FE5723FFA7600066209B /* CoreVideo.framework */,
+				CEB3FE5523FFA7540066209B /* CoreMedia.framework */,
+				CEB3FE5323FFA7410066209B /* CoreGraphics.framework */,
+				CEB3FE5123FFA7360066209B /* CoreImage.framework */,
+				CEB3FE4F23FFA72D0066209B /* ImageCaptureCore.framework */,
+				CEB3FE4D23FFA7230066209B /* ImageIO.framework */,
+				CEB3FE4B23FFA7140066209B /* Accelerate.framework */,
+				CEB3FE4923FFA6DB0066209B /* AssetsLibrary.framework */,
+				CEB3FE4723FFA68A0066209B /* VisionKit.framework */,
+				CEB3FE4523FFA6800066209B /* Vision.framework */,
+				CEB3FE4323FFA6370066209B /* AVFoundation.framework */,
+				CEB3FE3F23FF8B820066209B /* opencv2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEB3FD9C23FF89440066209B /* opencv-game-test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEB3FDCF23FF89460066209B /* Build configuration list for PBXNativeTarget "opencv-game-test" */;
+			buildPhases = (
+				CEB3FD9923FF89440066209B /* Sources */,
+				CEB3FD9A23FF89440066209B /* Frameworks */,
+				CEB3FD9B23FF89440066209B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "opencv-game-test";
+			productName = "opencv-game-test";
+			productReference = CEB3FD9D23FF89440066209B /* opencv-game-test.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CEB3FDBA23FF89460066209B /* opencv-game-testTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEB3FDD223FF89460066209B /* Build configuration list for PBXNativeTarget "opencv-game-testTests" */;
+			buildPhases = (
+				CEB3FDB723FF89460066209B /* Sources */,
+				CEB3FDB823FF89460066209B /* Frameworks */,
+				CEB3FDB923FF89460066209B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEB3FDBD23FF89460066209B /* PBXTargetDependency */,
+			);
+			name = "opencv-game-testTests";
+			productName = "opencv-game-testTests";
+			productReference = CEB3FDBB23FF89460066209B /* opencv-game-testTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CEB3FDC523FF89460066209B /* opencv-game-testUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEB3FDD523FF89460066209B /* Build configuration list for PBXNativeTarget "opencv-game-testUITests" */;
+			buildPhases = (
+				CEB3FDC223FF89460066209B /* Sources */,
+				CEB3FDC323FF89460066209B /* Frameworks */,
+				CEB3FDC423FF89460066209B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEB3FDC823FF89460066209B /* PBXTargetDependency */,
+			);
+			name = "opencv-game-testUITests";
+			productName = "opencv-game-testUITests";
+			productReference = CEB3FDC623FF89460066209B /* opencv-game-testUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEB3FD9523FF89440066209B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = User;
+				TargetAttributes = {
+					CEB3FD9C23FF89440066209B = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					CEB3FDBA23FF89460066209B = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = CEB3FD9C23FF89440066209B;
+					};
+					CEB3FDC523FF89460066209B = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = CEB3FD9C23FF89440066209B;
+					};
+				};
+			};
+			buildConfigurationList = CEB3FD9823FF89440066209B /* Build configuration list for PBXProject "opencv-game-test" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEB3FD9423FF89440066209B;
+			productRefGroup = CEB3FD9E23FF89440066209B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEB3FD9C23FF89440066209B /* opencv-game-test */,
+				CEB3FDBA23FF89460066209B /* opencv-game-testTests */,
+				CEB3FDC523FF89460066209B /* opencv-game-testUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEB3FD9B23FF89440066209B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEB3FDB323FF89450066209B /* LaunchScreen.storyboard in Resources */,
+				CEB3FDB023FF89450066209B /* Assets.xcassets in Resources */,
+				CEB3FDAE23FF89440066209B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEB3FDB923FF89460066209B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEB3FDC423FF89460066209B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEB3FD9923FF89440066209B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEB3FDB623FF89450066209B /* main.m in Sources */,
+				CEB3FDAA23FF89440066209B /* Shaders.metal in Sources */,
+				CEB3FDA523FF89440066209B /* Renderer.m in Sources */,
+				CEB3FDA823FF89440066209B /* GameViewController.mm in Sources */,
+				CEB3FDA223FF89440066209B /* AppDelegate.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEB3FDB723FF89460066209B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEB3FDC023FF89460066209B /* opencv_game_testTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEB3FDC223FF89460066209B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEB3FDCB23FF89460066209B /* opencv_game_testUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEB3FDBD23FF89460066209B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEB3FD9C23FF89440066209B /* opencv-game-test */;
+			targetProxy = CEB3FDBC23FF89460066209B /* PBXContainerItemProxy */;
+		};
+		CEB3FDC823FF89460066209B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEB3FD9C23FF89440066209B /* opencv-game-test */;
+			targetProxy = CEB3FDC723FF89460066209B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CEB3FDAC23FF89440066209B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEB3FDAD23FF89440066209B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CEB3FDB123FF89450066209B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEB3FDB223FF89450066209B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEB3FDCD23FF89460066209B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CEB3FDCE23FF89460066209B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEB3FDD023FF89460066209B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9ZQ9D7U37F;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "opencv-game-test/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "hogehoge0123.opencv-game-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEB3FDD123FF89460066209B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9ZQ9D7U37F;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "opencv-game-test/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "hogehoge0123.opencv-game-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CEB3FDD323FF89460066209B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "opencv-game-testTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "hogehoge0123.opencv-game-testTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/opencv-game-test.app/opencv-game-test";
+			};
+			name = Debug;
+		};
+		CEB3FDD423FF89460066209B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "opencv-game-testTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "hogehoge0123.opencv-game-testTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/opencv-game-test.app/opencv-game-test";
+			};
+			name = Release;
+		};
+		CEB3FDD623FF89460066209B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "opencv-game-testUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "hogehoge0123.opencv-game-testUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "opencv-game-test";
+			};
+			name = Debug;
+		};
+		CEB3FDD723FF89460066209B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "opencv-game-testUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "hogehoge0123.opencv-game-testUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "opencv-game-test";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEB3FD9823FF89440066209B /* Build configuration list for PBXProject "opencv-game-test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEB3FDCD23FF89460066209B /* Debug */,
+				CEB3FDCE23FF89460066209B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEB3FDCF23FF89460066209B /* Build configuration list for PBXNativeTarget "opencv-game-test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEB3FDD023FF89460066209B /* Debug */,
+				CEB3FDD123FF89460066209B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEB3FDD223FF89460066209B /* Build configuration list for PBXNativeTarget "opencv-game-testTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEB3FDD323FF89460066209B /* Debug */,
+				CEB3FDD423FF89460066209B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEB3FDD523FF89460066209B /* Build configuration list for PBXNativeTarget "opencv-game-testUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEB3FDD623FF89460066209B /* Debug */,
+				CEB3FDD723FF89460066209B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEB3FD9523FF89440066209B /* Project object */;
+}
