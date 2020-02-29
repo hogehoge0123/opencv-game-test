@@ -7,6 +7,13 @@ https://docs.opencv.org/master/d3/dc9/tutorial_table_of_content_ios.html
 ダウンロード（iOS向け）<br>
 https://opencv.org/releases/
 
+# TODO
+- [x] Xcode のプロジェクトに OpennCV を組み込んで実機で動かす
+- [x] フロントカメラから動画像を取得する
+- [ ] eye-tracking の情報を取得する
+- [ ] ３６０°動画を再生する
+- [ ] 目線で動画を操作する
+
 # 参考
 OpenCV for iOS の導入と画像の加工まで<br>
 https://qiita.com/shu223/items/3ff48a8bd6edd910e780
