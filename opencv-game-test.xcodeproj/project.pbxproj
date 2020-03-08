@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CEA1528224130F1B00C51BB7 /* haarcascade_eye.xml in Resources */ = {isa = PBXBuildFile; fileRef = CEA1528124130F1B00C51BB7 /* haarcascade_eye.xml */; };
 		CEB3FDA223FF89440066209B /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = CEB3FDA123FF89440066209B /* AppDelegate.mm */; };
 		CEB3FDA523FF89440066209B /* Renderer.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB3FDA423FF89440066209B /* Renderer.m */; };
 		CEB3FDA823FF89440066209B /* GameViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = CEB3FDA723FF89440066209B /* GameViewController.mm */; };
@@ -50,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CEA1528124130F1B00C51BB7 /* haarcascade_eye.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = haarcascade_eye.xml; path = assets/opencv/data/haarcascades/haarcascade_eye.xml; sourceTree = SOURCE_ROOT; };
 		CEB3FD9D23FF89440066209B /* opencv-game-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "opencv-game-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB3FDA023FF89440066209B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CEB3FDA123FF89440066209B /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 		CEB3FD9F23FF89440066209B /* opencv-game-test */ = {
 			isa = PBXGroup;
 			children = (
+				CEA1528124130F1B00C51BB7 /* haarcascade_eye.xml */,
 				CEB3FDA023FF89440066209B /* AppDelegate.h */,
 				CEB3FDA123FF89440066209B /* AppDelegate.mm */,
 				CEB3FDA323FF89440066209B /* Renderer.h */,
@@ -305,6 +308,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEA1528224130F1B00C51BB7 /* haarcascade_eye.xml in Resources */,
 				CEB3FDB323FF89450066209B /* LaunchScreen.storyboard in Resources */,
 				CEB3FDB023FF89450066209B /* Assets.xcassets in Resources */,
 				CEB3FDAE23FF89440066209B /* Main.storyboard in Resources */,
